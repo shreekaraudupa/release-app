@@ -1,0 +1,16 @@
+{% extends "common.html" %}
+
+{% block body %}
+        <h1>Welcome to Release application</h1>
+
+        <p>Please select a process that you want to perform</p>
+
+        <ul style="list-style-type:circle;">
+            <li><a href="{{ url_for('branch_cut') }}">Branch Cut </a></li>
+            <li>Release notes </li>
+            <li>Release Calendar </li>
+            <li>ITSM Summary</li>
+            <li>Dependency matrix</li>
+            <li>Post Release Activities</li>
+        </ul>
+{% endblock %}
